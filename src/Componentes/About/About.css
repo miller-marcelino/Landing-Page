@@ -1,0 +1,356 @@
+.about-section {
+  padding: 100px 0 0 0;
+  margin-bottom: -150px;
+  background: #1e4a4a;
+}
+
+.about-section .section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white !important;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: #ff6600;
+  border-radius: 2px;
+}
+
+.about-section .section-subtitle {
+  font-size: 1.2rem;
+  color: white !important;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  line-height: 1.8;
+  z-index: 10;
+  position: relative;
+}
+
+.highlight-text {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1e4a4a;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #ff6600;
+}
+
+.video-container {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+.about-video {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 15px;
+}
+
+.features-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
+  margin: 3rem 0 2rem;
+}
+
+.viver-bem-section {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.viver-bem-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.viver-bem-content {
+  background: transparent;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.viver-bem-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.viver-bem-list li {
+  font-size: 1.3rem;
+  color: white;
+  margin-bottom: 0.8rem;
+  font-weight: normal;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.viver-bem-list li::before {
+  content: "•";
+  color: #4CAF50;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -0.1rem;
+}
+
+.viver-bem-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Seção 32 Motivos Para Viver Melhor */
+.motivos-section {
+  text-align: center;
+  margin: 2rem 0 0 0;
+  padding-bottom: 0;
+}
+
+.motivos-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+  padding: 0;
+}
+
+.amenity-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  margin-bottom: 0;
+}
+
+.amenity-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.amenity-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  width: 80px;
+  height: 80px;
+  background: #ff6600;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+}
+
+.amenity-image {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.amenity-label {
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.feature-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon-wrapper {
+  background: linear-gradient(45deg, #003366, #0066cc);
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.feature-content {
+  flex: 1;
+}
+
+.feature-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.feature-description {
+  color: white;
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.social-share {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.share-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.share-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.share-btn.facebook {
+  background: #1877f2;
+  color: white;
+}
+
+.share-btn.facebook:hover {
+  background: #166fe5;
+  transform: translateY(-2px);
+}
+
+.share-btn.twitter {
+  background: #1da1f2;
+  color: white;
+}
+
+.share-btn.twitter:hover {
+  background: #0d8bd9;
+  transform: translateY(-2px);
+}
+
+.share-btn.copy-link {
+  background: #6c757d;
+  color: white;
+}
+
+.share-btn.copy-link:hover {
+  background: #5a6268;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .highlight-text {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+  
+  .about-video {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .features-title {
+    font-size: 1.5rem;
+  }
+  
+  .viver-bem-title {
+    font-size: 1.6rem;
+  }
+  
+  .viver-bem-content {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+  
+  .viver-bem-list li {
+    font-size: 1rem;
+  }
+  
+  .feature-card .card-body {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .feature-icon-wrapper {
+    margin: 0 auto 1rem;
+  }
+  
+  .share-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .share-btn {
+    width: 200px;
+    text-align: center;
+  }
+}

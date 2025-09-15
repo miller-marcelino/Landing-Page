@@ -1,0 +1,163 @@
+.amenities-section {
+  padding: 0;
+  background: #1e4a4a;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: #ff6600;
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.8;
+}
+
+.amenity-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+  overflow: hidden;
+}
+
+.amenity-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.amenity-card .card-body {
+  padding: 2rem 1.5rem;
+}
+
+.amenity-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 2rem;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.amenity-card:hover .amenity-icon {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.amenity-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  line-height: 1.4;
+  min-height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.amenities-summary {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ecef;
+}
+
+.summary-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.summary-text {
+  font-size: 1.2rem;
+  color: white;
+  line-height: 1.8;
+  margin: 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .amenities-section {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .amenity-card .card-body {
+    padding: 1.5rem 1rem;
+  }
+  
+  .amenity-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+  
+  .amenity-name {
+    font-size: 1rem;
+    min-height: 2.4rem;
+  }
+  
+  .amenities-summary {
+    padding: 2rem 1.5rem;
+  }
+  
+  .summary-title {
+    font-size: 1.6rem;
+  }
+  
+  .summary-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .amenity-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .amenity-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+  
+  .amenity-name {
+    font-size: 0.95rem;
+  }
+}
